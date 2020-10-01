@@ -1,1 +1,1 @@
-# Online-Shop
+# This project was created for educational purpose only.
