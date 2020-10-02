@@ -55,6 +55,8 @@ exports.postEditProduct = (req, res, next) => {
 
 exports.postDeleteProduct = (req, res, next) => {
     const prodID = req.body.productID;
+    Product.deleteByID(prodID);
+    res.redirect('/adming/products');
 }
 exports.getProducts = (req, res, next) => {
     Product.fetchAll((products) => {
